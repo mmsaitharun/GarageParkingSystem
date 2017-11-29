@@ -229,6 +229,7 @@ public class GarageManager {
 		return df.format(inDate);
 	}
 
+	// this generates reports
 	public Integer generateReports() throws SQLException {
 		Integer totRevenue = 0;
 		String query = "SELECT SUM(money_col) AS overallRevenue FROM admin_tb2;";
